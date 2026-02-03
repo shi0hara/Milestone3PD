@@ -1,0 +1,5 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0f2027"/>
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="48" fill="#56ccf2" text-anchor="middle">Current Weather View</text>
+  <rect x="200" y="350" width="800" height="200" rx="15" fill="#203a43" stroke="#56ccf2" stroke-width="2"/>
+</svg>

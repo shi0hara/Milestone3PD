@@ -1,0 +1,245 @@
+[
+  {
+    "slug": "todo-application",
+    "title": "Todo Application",
+    "category": "Web App",
+    "short": "A task management app with local storage functionality",
+    "description": "A fully functional todo application built with vanilla JavaScript. Features include adding, editing, deleting tasks, marking as complete, filtering by status, and persistent storage using localStorage. The app demonstrates CRUD operations and modern JavaScript ES6+ features.",
+    "featured": "/images/projects/todo-app/hero.jpg",
+    "images": [
+      "/images/projects/todo-app/hero.jpg",
+      "/images/projects/todo-app/screenshot1.jpg",
+      "/images/projects/todo-app/screenshot2.jpg",
+      "/images/projects/todo-app/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "HTML5", "CSS3", "LocalStorage", "UI Design"],
+    "features": [
+      "Add, edit, and delete tasks with ease",
+      "Mark tasks as completed with visual feedback",
+      "Filter tasks by all, active, or completed status",
+      "Persistent storage using browser localStorage",
+      "Responsive design works on all devices",
+      "Clean and intuitive user interface"
+    ],
+    "challenges": "The main challenge was implementing efficient localStorage management and ensuring data persistence across browser sessions. I learned about proper data serialization and handling edge cases.",
+    "repo": "https://github.com/yourusername/todo-app",
+    "live": "https://todo-app-demo.netlify.app",
+    "date": "2024-01"
+  },
+  {
+    "slug": "weather-dashboard",
+    "title": "Weather Dashboard",
+    "category": "Web App",
+    "short": "Real-time weather information using OpenWeather API",
+    "description": "An interactive weather dashboard that provides real-time weather data for any city worldwide. Built with vanilla JavaScript and integrated with the OpenWeather API to fetch current conditions, 5-day forecasts, and weather alerts. Features a clean, modern UI with weather icons and temperature animations.",
+    "featured": "/images/projects/weather-dashboard/hero.jpg",
+    "images": [
+      "/images/projects/weather-dashboard/hero.jpg",
+      "/images/projects/weather-dashboard/screenshot1.jpg",
+      "/images/projects/weather-dashboard/screenshot2.jpg",
+      "/images/projects/weather-dashboard/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "REST API", "CSS3", "HTML5", "Async/Await"],
+    "features": [
+      "Search weather by city name or coordinates",
+      "Display current temperature, humidity, and wind speed",
+      "5-day weather forecast with detailed information",
+      "Dynamic background changes based on weather conditions",
+      "Geolocation support for automatic location detection",
+      "Temperature unit conversion (Celsius/Fahrenheit)"
+    ],
+    "challenges": "Working with asynchronous API calls and handling various error states was challenging. I implemented proper error handling and loading states to improve user experience.",
+    "repo": "https://github.com/yourusername/weather-dashboard",
+    "live": "https://weather-dashboard-demo.netlify.app",
+    "date": "2024-02"
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "category": "Website",
+    "short": "Personal portfolio showcasing projects and skills",
+    "description": "A modern, responsive portfolio website built with Node.js and EJS templating. Features smooth animations, dark/light mode toggle, interactive cursor effects, and a project carousel. The site showcases my web development skills and provides an engaging user experience.",
+    "featured": "/images/projects/portfolio/hero.jpg",
+    "images": [
+      "/images/projects/portfolio/hero.jpg",
+      "/images/projects/portfolio/screenshot1.jpg",
+      "/images/projects/portfolio/screenshot2.jpg",
+      "/images/projects/portfolio/screenshot3.jpg"
+    ],
+    "tech": ["Node.js", "Express", "EJS", "CSS3", "JavaScript"],
+    "features": [
+      "Responsive design optimized for all screen sizes",
+      "Dark and light mode with smooth transitions",
+      "Interactive cursor trail effects",
+      "Animated loading screen with progress indicator",
+      "Project carousel with keyboard navigation",
+      "Contact form with Web3Forms integration"
+    ],
+    "challenges": "Creating smooth animations and ensuring performance across different devices required careful optimization. I learned about CSS transforms, requestAnimationFrame, and efficient DOM manipulation.",
+    "repo": "https://github.com/yourusername/portfolio",
+    "live": "https://yourportfolio.com",
+    "date": "2024-03"
+  },
+  {
+    "slug": "e-commerce-store",
+    "title": "E-Commerce Store",
+    "category": "Web App",
+    "short": "Online shopping platform with cart functionality",
+    "description": "A fully functional e-commerce website featuring product listings, shopping cart, checkout process, and order management. Built with React and integrated with a mock API for product data. Includes search, filtering, sorting capabilities, and a responsive design.",
+    "featured": "/images/projects/ecommerce/hero.jpg",
+    "images": [
+      "/images/projects/ecommerce/hero.jpg",
+      "/images/projects/ecommerce/screenshot1.jpg",
+      "/images/projects/ecommerce/screenshot2.jpg",
+      "/images/projects/ecommerce/screenshot3.jpg"
+    ],
+    "tech": ["React", "JavaScript", "CSS3", "REST API", "React Router"],
+    "features": [
+      "Product catalog with detailed product pages",
+      "Shopping cart with add/remove/update quantities",
+      "Product search and advanced filtering",
+      "Sort by price, popularity, and ratings",
+      "Responsive design for mobile shopping",
+      "Checkout process with form validation"
+    ],
+    "challenges": "Managing complex state across multiple components and implementing the shopping cart logic was challenging. I learned about React Context API and proper state management patterns.",
+    "repo": "https://github.com/yourusername/ecommerce-store",
+    "live": "https://ecommerce-demo.netlify.app",
+    "date": "2024-04"
+  },
+  {
+    "slug": "recipe-finder",
+    "title": "Recipe Finder",
+    "category": "Web App",
+    "short": "Discover recipes using Spoonacular API",
+    "description": "An interactive recipe finder application that helps users discover new recipes based on ingredients, dietary preferences, and cuisine types. Integrated with Spoonacular API to provide detailed recipe information, nutritional data, and cooking instructions.",
+    "featured": "/images/projects/recipe-finder/hero.jpg",
+    "images": [
+      "/images/projects/recipe-finder/hero.jpg",
+      "/images/projects/recipe-finder/screenshot1.jpg",
+      "/images/projects/recipe-finder/screenshot2.jpg",
+      "/images/projects/recipe-finder/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "REST API", "HTML5", "CSS3", "Local Storage"],
+    "features": [
+      "Search recipes by ingredients or name",
+      "Filter by dietary restrictions and cuisines",
+      "View detailed recipe information and instructions",
+      "Save favorite recipes to local storage",
+      "Nutritional information display",
+      "Random recipe suggestion feature"
+    ],
+    "challenges": "Handling API rate limits and implementing efficient caching strategies was important. I learned about debouncing search inputs and optimizing API calls to improve performance.",
+    "repo": "https://github.com/yourusername/recipe-finder",
+    "live": "https://recipe-finder-demo.netlify.app",
+    "date": "2024-05"
+  },
+  {
+    "slug": "quiz-application",
+    "title": "Quiz Application",
+    "category": "Web App",
+    "short": "Interactive quiz game with multiple categories",
+    "description": "An engaging quiz application featuring multiple categories, difficulty levels, and a scoring system. Built with vanilla JavaScript using the Open Trivia Database API. Includes timer functionality, score tracking, and result analysis with visual feedback.",
+    "featured": "/images/projects/quiz-app/hero.jpg",
+    "images": [
+      "/images/projects/quiz-app/hero.jpg",
+      "/images/projects/quiz-app/screenshot1.jpg",
+      "/images/projects/quiz-app/screenshot2.jpg",
+      "/images/projects/quiz-app/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "HTML5", "CSS3", "REST API", "DOM Manipulation"],
+    "features": [
+      "Multiple quiz categories and difficulty levels",
+      "Timer functionality for each question",
+      "Real-time score tracking and display",
+      "Visual feedback for correct/incorrect answers",
+      "Results summary with performance analysis",
+      "Restart and category selection options"
+    ],
+    "challenges": "Implementing the timer logic and ensuring accurate score calculation required careful state management. I learned about setInterval, clearInterval, and proper cleanup of event listeners.",
+    "repo": "https://github.com/yourusername/quiz-app",
+    "live": "https://quiz-app-demo.netlify.app",
+    "date": "2024-06"
+  },
+  {
+    "slug": "expense-tracker",
+    "title": "Expense Tracker",
+    "category": "Web App",
+    "short": "Track income and expenses with visual charts",
+    "description": "A personal finance tracker that helps users manage their income and expenses. Features include adding transactions, categorizing expenses, viewing balance summaries, and visualizing spending patterns with charts. Data is stored locally for privacy.",
+    "featured": "/images/projects/expense-tracker/hero.jpg",
+    "images": [
+      "/images/projects/expense-tracker/hero.jpg",
+      "/images/projects/expense-tracker/screenshot1.jpg",
+      "/images/projects/expense-tracker/screenshot2.jpg",
+      "/images/projects/expense-tracker/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "Chart.js", "HTML5", "CSS3", "LocalStorage"],
+    "features": [
+      "Add, edit, and delete income/expense transactions",
+      "Categorize transactions with custom categories",
+      "Visual charts showing spending patterns",
+      "Calculate and display current balance",
+      "Filter transactions by date range",
+      "Export data as CSV for backup"
+    ],
+    "challenges": "Integrating Chart.js library and creating meaningful visualizations from transaction data was a learning experience. I gained skills in data manipulation and chart customization.",
+    "repo": "https://github.com/yourusername/expense-tracker",
+    "live": "https://expense-tracker-demo.netlify.app",
+    "date": "2024-07"
+  },
+  {
+    "slug": "movie-search",
+    "title": "Movie Search Engine",
+    "category": "Web App",
+    "short": "Search and explore movies using TMDb API",
+    "description": "A movie discovery platform that allows users to search for movies, view detailed information, watch trailers, and save favorites. Integrated with The Movie Database (TMDb) API to fetch movie data, ratings, cast information, and poster images.",
+    "featured": "/images/projects/movie-search/hero.jpg",
+    "images": [
+      "/images/projects/movie-search/hero.jpg",
+      "/images/projects/movie-search/screenshot1.jpg",
+      "/images/projects/movie-search/screenshot2.jpg",
+      "/images/projects/movie-search/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "REST API", "HTML5", "CSS3", "Async/Await"],
+    "features": [
+      "Search movies by title with autocomplete",
+      "View detailed movie information and trailers",
+      "Browse popular, top-rated, and upcoming movies",
+      "Save favorite movies to local storage",
+      "Responsive grid layout with poster images",
+      "Filter by genre and release year"
+    ],
+    "challenges": "Handling large amounts of image data and implementing lazy loading for better performance was crucial. I learned about intersection observer API and image optimization techniques.",
+    "repo": "https://github.com/yourusername/movie-search",
+    "live": "https://movie-search-demo.netlify.app",
+    "date": "2024-08"
+  },
+  {
+    "slug": "note-taking-app",
+    "title": "Note Taking App",
+    "category": "Web App",
+    "short": "Simple and elegant note-taking application",
+    "description": "A minimalist note-taking application with markdown support, tags, and search functionality. Built with vanilla JavaScript and designed for quick note capture and organization. Features include auto-save, note categorization, and a clean, distraction-free interface.",
+    "featured": "/images/projects/notes-app/hero.jpg",
+    "images": [
+      "/images/projects/notes-app/hero.jpg",
+      "/images/projects/notes-app/screenshot1.jpg",
+      "/images/projects/notes-app/screenshot2.jpg",
+      "/images/projects/notes-app/screenshot3.jpg"
+    ],
+    "tech": ["JavaScript", "Markdown", "HTML5", "CSS3", "LocalStorage"],
+    "features": [
+      "Create, edit, and delete notes instantly",
+      "Markdown support for rich text formatting",
+      "Tag notes for better organization",
+      "Full-text search across all notes",
+      "Auto-save functionality prevents data loss",
+      "Dark mode for comfortable writing"
+    ],
+    "challenges": "Implementing markdown parsing and rendering required understanding of regex and string manipulation. I also learned about contenteditable attributes and handling user input securely.",
+    "repo": "https://github.com/yourusername/notes-app",
+    "live": "https://notes-app-demo.netlify.app",
+    "date": "2024-09"
+  }
+]

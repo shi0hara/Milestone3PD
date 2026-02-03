@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ho Yi An Jerome - Student Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="falling-icons">
+                <i class="devicon-javascript-plain falling-icon" style="left: 10%; animation-delay: 0s;"></i>
+                <i class="devicon-react-original falling-icon" style="left: 20%; animation-delay: 0.2s;"></i>
+                <i class="devicon-nodejs-plain falling-icon" style="left: 30%; animation-delay: 0.4s;"></i>
+                <i class="devicon-html5-plain falling-icon" style="left: 40%; animation-delay: 0.6s;"></i>
+                <i class="devicon-css3-plain falling-icon" style="left: 50%; animation-delay: 0.8s;"></i>
+                <i class="devicon-python-plain falling-icon" style="left: 60%; animation-delay: 1s;"></i>
+                <i class="devicon-git-plain falling-icon" style="left: 70%; animation-delay: 1.2s;"></i>
+                <i class="devicon-vscode-plain falling-icon" style="left: 80%; animation-delay: 1.4s;"></i>
+                <i class="devicon-mongodb-plain falling-icon" style="left: 90%; animation-delay: 1.6s;"></i>
+            </div>
+            
+            <div class="stacking-icons">
+                <div class="stack-container">
+                    <i class="devicon-javascript-plain stack-icon stack-1"></i>
+                    <i class="devicon-react-original stack-icon stack-2"></i>
+                    <i class="devicon-nodejs-plain stack-icon stack-3"></i>
+                    <i class="devicon-html5-plain stack-icon stack-4"></i>
+                    <i class="devicon-css3-plain stack-icon stack-5"></i>
+                </div>
+            </div>
+            
+            <div class="loading-text">
+                <h2>Loading Portfolio</h2>
+                <div class="progress-container">
+                    <div class="snake-loader">
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                        <div class="snake-bar"></div>
+                    </div>
+                    <div class="percentage">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Abstract Animated Background -->
+    <div class="animated-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Cursor Trail Canvas -->
+    <canvas id="cursorCanvas"></canvas>
+    <nav class="navbar">
+        <div class="logo">HO YI AN JEROME</div>
+        <ul class="nav-links">
+            <li><a href="#ueber-mich">About</a></li>
+            <li><a href="#leistung">Services</a></li>
+            <li><a href="#projekte">Projects</a></li>
+            <li><a href="#kontakt">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <div class="toggle-track">
+                <div class="toggle-thumb">
+                    <span class="icon sun-icon">☀️</span>
+                    <span class="icon moon-icon">🌙</span>
+                </div>
+            </div>
+        </button>
+    </nav>
+
+    <header class="hero cursor-effect">
+        <div class="container">
+            <span class="subtitle">Hey, I'm</span>
+            <h1 class="marquee">
+                <span>Ho Yi An Jerome</span>
+            </h1>
+            <h2>Student <br> <span class="highlight">Developer & Designer</span></h2>
+            <p>I'm a passionate student learning to build web applications and create digital experiences.</p>
+            <div class="cta-group">
+                <a href="#projekte" class="btn btn-primary">View My Projects 📚</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">Currently Learning</div>
+                <div class="stat-item">Web Development</div>
+                <div class="stat-item">Student Portfolio</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="ueber-mich" class="section">
+        <div class="container">
+            <div class="section-header">
+                    <span class="section-number">01 — About</span>
+                    <h3>About <br><span class="highlight">Me</span></h3>
+                    <h4>My journey in learning web development</h4>
+                </div>
+            
+            <div class="content margin-top">
+                <div class="text-block">
+                    <blockquote>"Learning to code is learning to create."</blockquote>
+                    <p>I'm Ho Yi An Jerome, a student passionate about web development and design. I'm currently learning how to build modern, responsive websites and applications.</p>
+                    <p>My journey started with curiosity about how websites work, and now I'm exploring HTML, CSS, JavaScript, and various frameworks. Each project is a learning opportunity.</p>
+                    <p>I enjoy solving problems through code and creating user-friendly interfaces. I'm always eager to learn new technologies and improve my skills.</p>
+                    <p>This portfolio showcases my projects and progress as I continue to grow as a developer.</p>
+                    <a href="#kontakt" class="btn btn-secondary">Let's Connect! 👋</a>
+                </div>
+                <div class="image-block">
+                    <!-- Placeholder for About Image -->
+                    <div class="placeholder-img">About Image</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leistung" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02 — Skills</span>
+                <h3>What I'm <br><span class="highlight">Learning</span></h3>
+                <h4>Technologies and tools I work with</h4>
+            </div>
+
+            <div class="services-grid margin-top">
+                <div class="service-card">
+                    <h5>Frontend Development</h5>
+                    <p>Building responsive and interactive user interfaces.</p>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript & React</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h5>Backend Development</h5>
+                    <p>Creating server-side applications and APIs.</p>
+                    <ul>
+                        <li>Node.js & Express</li>
+                        <li>Database Management</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h5>Design</h5>
+                    <p>Creating clean and user-friendly interfaces.</p>
+                    <ul>
+                        <li>UI/UX Principles</li>
+                        <li>Figma & Prototyping</li>
+                        <li>Visual Design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h5>Tools & Workflow</h5>
+                    <p>Modern development tools and practices.</p>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-summary">
+                <p>I'm constantly learning and improving my skills through practice and projects. Open to feedback and new challenges!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projekte" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03 — Projects</span>
+                <h3>My <br><span class="highlight">Learning Projects</span></h3>
+                <h4>Practice makes progress</h4>
+            </div>
+
+            <div class="projects-carousel-wrapper margin-top">
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" aria-label="Previous project">←</button>
+                    <button class="carousel-btn next-btn" aria-label="Next project">→</button>
+                </div>
+                
+                <div class="projects-carousel">
+                    <div class="carousel-track">
+                        <!-- Project 1 -->
+                        <div class="carousel-item" data-project="1">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Portfolio Website</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Portfolio Website</h5>
+                                <p class="meta">Personal Project · HTML/CSS/JavaScript</p>
+                                <p>My personal portfolio showcasing my projects and skills with modern design.</p>
+                                <div class="tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive</span>
+                                </div>
+                                <a href="/projects/portfolio-website" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="carousel-item" data-project="2">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Todo App</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Todo Application</h5>
+                                <p class="meta">Web App · JavaScript</p>
+                                <p>A task management app with local storage functionality.</p>
+                                <div class="tags">
+                                    <span>JavaScript</span>
+                                    <span>LocalStorage</span>
+                                    <span>UI Design</span>
+                                </div>
+                                <a href="/projects/todo-application" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="carousel-item" data-project="3">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Weather App</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Weather Dashboard</h5>
+                                <p class="meta">Web App · API Integration</p>
+                                <p>Real-time weather information using external API.</p>
+                                <div class="tags">
+                                    <span>API</span>
+                                    <span>JavaScript</span>
+                                    <span>Async/Await</span>
+                                </div>
+                                <a href="/projects/weather-dashboard" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 4 -->
+                        <div class="carousel-item" data-project="4">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Calculator</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>E-Commerce Store</h5>
+                                <p class="meta">Web App · React</p>
+                                <p>Online shopping platform with cart functionality.</p>
+                                <div class="tags">
+                                    <span>React</span>
+                                    <span>E-Commerce</span>
+                                </div>
+                                <a href="/projects/e-commerce-store" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 5 -->
+                        <div class="carousel-item" data-project="5">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Quiz Game</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Recipe Finder</h5>
+                                <p class="meta">Web App · API</p>
+                                <p>Discover recipes using Spoonacular API.</p>
+                                <div class="tags">
+                                    <span>JavaScript</span>
+                                    <span>REST API</span>
+                                </div>
+                                <a href="/projects/recipe-finder" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 6 -->
+                        <div class="carousel-item" data-project="6">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Quiz App</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Quiz Application</h5>
+                                <p class="meta">Web App · JavaScript</p>
+                                <p>Interactive quiz game with multiple categories.</p>
+                                <div class="tags">
+                                    <span>JavaScript</span>
+                                    <span>API</span>
+                                </div>
+                                <a href="/projects/quiz-application" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 7 -->
+                        <div class="carousel-item" data-project="7">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Expense Tracker</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Expense Tracker</h5>
+                                <p class="meta">Web App · Chart.js</p>
+                                <p>Track income and expenses with visual charts.</p>
+                                <div class="tags">
+                                    <span>JavaScript</span>
+                                    <span>Chart.js</span>
+                                </div>
+                                <a href="/projects/expense-tracker" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 8 -->
+                        <div class="carousel-item" data-project="8">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Movie Search</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Movie Search Engine</h5>
+                                <p class="meta">Web App · TMDb API</p>
+                                <p>Search and explore movies using TMDb API.</p>
+                                <div class="tags">
+                                    <span>JavaScript</span>
+                                    <span>REST API</span>
+                                </div>
+                                <a href="/projects/movie-search" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 9 -->
+                        <div class="carousel-item" data-project="9">
+                            <div class="project-image-only">
+                                <div class="placeholder-img">Notes App</div>
+                            </div>
+                            <div class="project-details">
+                                <h5>Note Taking App</h5>
+                                <p class="meta">Web App · Markdown</p>
+                                <p>Simple and elegant note-taking application.</p>
+                                <div class="tags">
+                                    <span>JavaScript</span>
+                                    <span>Markdown</span>
+                                </div>
+                                <a href="/projects/note-taking-app" class="btn btn-outline">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process margin-top">
+                <h3>My <br><span class="highlight">Learning Approach</span></h3>
+                <p>How I tackle new projects</p>
+                <div class="steps-grid">
+                    <div class="step">
+                        <span class="step-num">1</span>
+                        <h5>Learn</h5>
+                        <p>Research and understand the concepts and technologies needed.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">2</span>
+                        <h5>Build</h5>
+                        <p>Apply knowledge by creating practical projects.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">3</span>
+                        <h5>Improve</h5>
+                        <p>Refine and optimize based on feedback and testing.</p>
+                    </div>
+                </div>
+                
+                <!-- Tech Stack Section -->
+                <div class="tech-stack-section">
+                    <h4>Technologies & Tools</h4>
+                    <div class="tech-categories">
+                        <div class="tech-category">
+                            <h5>Frontend</h5>
+                            <div class="tech-skills">
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">React</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="65"></div>
+                                        </div>
+                                        <span class="skill-percent">65%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-nextjs-plain"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Next.js</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="50"></div>
+                                        </div>
+                                        <span class="skill-percent">50%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-vuejs-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Vue.js</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="55"></div>
+                                        </div>
+                                        <span class="skill-percent">55%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">JavaScript</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="75"></div>
+                                        </div>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5>Backend</h5>
+                            <div class="tech-skills">
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-nodejs-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Node.js</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="70"></div>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-express-original"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Express</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="65"></div>
+                                        </div>
+                                        <span class="skill-percent">65%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="60"></div>
+                                        </div>
+                                        <span class="skill-percent">60%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-mongodb-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">MongoDB</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="55"></div>
+                                        </div>
+                                        <span class="skill-percent">55%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5>Design & Tools</h5>
+                            <div class="tech-skills">
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-figma-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Figma</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="70"></div>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-photoshop-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Photoshop</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="55"></div>
+                                        </div>
+                                        <span class="skill-percent">55%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-vscode-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">VS Code</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="80"></div>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Git</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="65"></div>
+                                        </div>
+                                        <span class="skill-percent">65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5>CMS & E-Commerce</h5>
+                            <div class="tech-skills">
+                                <div class="skill-item">
+                                    <div class="skill-icon"><i class="devicon-wordpress-plain colored"></i></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">WordPress</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="50"></div>
+                                        </div>
+                                        <span class="skill-percent">50%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><svg viewBox="0 0 128 128" width="40" height="40"><path fill="#95BF47" d="M101.5 10.6c-.2 0-.4-.1-.6-.1-.2 0-3.9-.4-3.9-.4s-2.9-2.8-3.2-3.1c-.3-.3-1-.2-1.2-.1 0 0-.6.2-1.6.5-.1-1.6-.5-3.8-1.6-5.7-2.1-3.3-5.3-5-9.1-5h-.4c-.3-.4-.6-.7-1-1-2.1-1.9-4.8-2.8-7.8-2.6-6.1.5-12.2 4.6-17.1 11.6-3.5 4.9-6.2 11-7 16-.1.3-.2.6-.3.9-6.2 1.9-10.5 3.3-10.6 3.3-3.1 1-3.2 1.1-3.6 3.9-.3 2.1-8.5 65.5-8.5 65.5l66.9 11.6 29-7.2c-.1-.1-19.1-109.6-19.4-109.6zm-19.2-3.1c-1.1.3-2.4.7-3.7 1.2v-.9c0-2.5-.3-4.5-.9-6.2 2.4.3 4 2.6 4.6 5.9zm-7.7 2.4c-3.5 1.1-7.4 2.3-11.3 3.5.9-4.4 2.9-8.8 5.4-11.7.8-.9 1.9-2 3.2-2.7 1.3 2.5 2 5.5 2.1 9.4.1.5.1.9.1 1.3.1.1.3.1.5.2zm-5.8-16c.9 0 1.7.2 2.5.5-1.4.8-2.7 2-3.9 3.3-3.3 3.8-5.8 9.6-6.7 15.2-3.1 1-6 1.9-8.8 2.7 2-9.2 8.6-21.1 16.9-21.7z"/><path fill="#5E8E3E" d="M100.9 10.5c-.2 0-.4-.1-.6-.1-.2 0-3.9-.4-3.9-.4s-2.9-2.8-3.2-3.1c-.1-.1-.3-.2-.5-.2l-1.9 111.6 29-7.2s-19.1-109.5-19.4-109.6c-.1 0-.3 0-.5 0z"/><path fill="#FFF" d="M60.2 45.4l-3.7 11.1s-4.1-1.9-9.1-1.6c-7.4.5-7.5 5.1-7.4 6.3.4 6 16.9 7.3 17.8 21.3.7 11-5.8 18.5-15.2 19.1-11.3.7-17.5-6-17.5-6l2.4-10.2s6.3 4.7 11.3 4.4c3.3-.2 4.5-2.9 4.4-4.8-.5-7.9-14-7.4-14.8-20.1-.7-10.6 6.3-21.3 21.6-22.3 5.9-.4 8.9 1 8.9 1l1.3 1.8zm23.8-12.3c-2.4.3-4 2.6-4.6 5.9-1.1.3-2.4.7-3.7 1.2v-.9c0-2.5-.3-4.5-.9-6.2 2.3.3 4 2.6 4.6 5.9 1.1.3 2.3.7 3.7 1.2h-.1v.9h.1c.1-.6.2-1.3.3-1.9 0-.4.1-.7.1-1.1.1.1.3.1.5 0zm-7.6 2.4c-3.5 1.1-7.4 2.3-11.3 3.5.9-4.4 2.9-8.8 5.4-11.7.8-.9 1.9-2 3.2-2.7 1.3 2.5 2 5.5 2.1 9.4.1.5.1.9.1 1.3 0 .1.3.1.5.2zm-5.7-16c.9 0 1.7.2 2.5.5-1.4.8-2.7 2-3.9 3.3-3.3 3.8-5.8 9.6-6.7 15.2-3.1 1-6 1.9-8.8 2.7 2-9.2 8.6-21.1 16.9-21.7z"/></svg></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Shopify</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="45"></div>
+                                        </div>
+                                        <span class="skill-percent">45%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><svg viewBox="0 0 128 128" width="40" height="40"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" fill="#4353FF" font-weight="bold">W</text></svg></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Webflow</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="40"></div>
+                                        </div>
+                                        <span class="skill-percent">40%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-icon"><svg viewBox="0 0 128 128" width="40" height="40"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" fill="#FFD500" font-weight="bold">C</text></svg></div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Contentful</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" data-progress="35"></div>
+                                        </div>
+                                        <span class="skill-percent">35%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04 — Contact</span>
+                <h3>Let's <br><span class="highlight">Connect!</span></h3>
+                <p>Get in touch</p>
+            </div>
+            
+            <div class="contact-grid margin-top">
+                <div class="contact-info">
+                    <p class="intro">Interested in collaborating or have a question? Feel free to reach out! 👋</p>
+                    <p class="guarantee">I'll respond as soon as possible!</p>
+                    
+                    <div class="contact-details">
+                        <h4>Email Me</h4>
+                        <a href="mailto:hoyianjerome@email.com">hoyianjerome@email.com</a>
+                        
+                        <h4>Connect on Social</h4>
+                        <a href="#" target="_blank">github.com/hoyianjerome</a>
+                    </div>
+                    
+                    <div class="availability">
+                        <h5>Info</h5>
+                        <p>Student · Open to opportunities</p>
+                        <div class="socials">
+                            <a href="https://github.com/hoyianjerome" target="_blank" class="social-btn">
+                                <i class="devicon-github-original"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/hoyianjerome" target="_blank" class="social-btn">
+                                <i class="devicon-linkedin-plain"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h4>Send me a message</h4>
+                    <p class="status">Always open to new connections!</p>
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="afba90d3-f1ab-43b6-ab84-142a4d84b95b">
+                        
+                        <!-- Specify who receives the email -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        
+                        <!-- Additional Web3Forms configuration -->
+                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject_input">Subject (optional)</label>
+                            <input type="text" id="subject_input" name="custom_subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div id="form-message" style="display: none; margin-bottom: 15px; padding: 12px; border-radius: 8px; font-size: 0.9rem;"></div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Let's goooooo! 🚀</button>
+                        <p class="disclaimer">By submitting you agree to the processing of your data. Your information will be treated confidentially.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+                <div class="footer-content">
+                <div class="footer-logo">Ho Yi An Jerome</div>
+                <div class="footer-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Ho Yi An Jerome · Student Portfolio | Learning & Growing
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
