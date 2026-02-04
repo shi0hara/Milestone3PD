@@ -1392,8 +1392,8 @@ ul {
 .projects-carousel-wrapper {
     position: relative;
     width: 100%;
-    min-height: 600px;
-    padding: 60px 0;
+    min-height: 950px;
+    padding: 80px 0;
 }
 
 .carousel-controls {
@@ -1449,24 +1449,26 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     position: relative;
-    height: 500px;
+    height: 640px; /* reduced by 20% */
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .carousel-item {
     position: absolute;
-    width: 400px;
-    height: 500px;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    width: auto; /* auto width follows image aspect */
+    min-width: 336px; /* reduced by 20% */
+    height: 640px; /* reduced by 20% */
+    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     transform-style: preserve-3d;
     display: flex;
+    align-items: stretch;
     border-radius: 20px;
     overflow: hidden;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background: transparent;
+    border: none;
 }
 
 .carousel-item::after {
@@ -1493,12 +1495,25 @@ ul {
 
 /* Default state - showing only image */
 .carousel-item .project-image-only {
-    width: 100%;
+    width: auto;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    flex-shrink: 0;
+    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 0 0 auto; /* size to content (image) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+/* Reduce image size by 20% to show full image without cropping */
+.carousel-item .project-image-only img {
+    width: auto !important; /* keep natural aspect */
+    height: 100% !important; /* fill card height */
+    object-fit: cover !important; /* crop sides if needed */
+    object-position: center !important;
+    display: block !important;
 }
 
 .carousel-item .project-image-only .placeholder-img {
@@ -1576,37 +1591,37 @@ ul {
 }
 
 .carousel-item.active:hover {
-    width: 800px;
-    height: 500px;
+    width: auto; /* let contents define width */
+    max-width: 92vw;
+    height: 640px; /* reduced by 20% */
     z-index: 20;
 }
 
 .carousel-item.active:hover .project-image-only {
-    width: 400px;
     border-radius: 20px 0 0 20px;
 }
 
 .carousel-item.active:hover .project-details {
-    width: 400px;
+    width: 336px; /* reduced by 20% */
     opacity: 1;
-    padding: 40px;
+    padding: 32px; /* reduced by 20% */
     pointer-events: all;
 }
 
 /* Previous item (left) */
 .carousel-item.prev {
     z-index: 5;
-    transform: translateX(-450px) scale(0.8) rotateY(15deg);
-    opacity: 0.5;
-    filter: blur(3px);
+    transform: translateX(-42vw) scale(0.7) rotateY(15deg);
+    opacity: 0.35;
+    filter: blur(4px);
 }
 
 /* Next item (right) */
 .carousel-item.next {
     z-index: 5;
-    transform: translateX(450px) scale(0.8) rotateY(-15deg);
-    opacity: 0.5;
-    filter: blur(3px);
+    transform: translateX(42vw) scale(0.7) rotateY(-15deg);
+    opacity: 0.35;
+    filter: blur(4px);
 }
 
 /* Far items (hidden) */
@@ -1615,6 +1630,56 @@ ul {
     opacity: 0;
     transform: scale(0.5);
     pointer-events: none;
+}
+
+/* Pagination Dots */
+.carousel-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.pagination-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border-color);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pagination-dot:hover {
+    background: var(--text-muted);
+    transform: scale(1.2);
+}
+
+.pagination-dot.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 12px rgba(13, 255, 171, 0.5);
+    width: 14px;
+    height: 14px;
+}
+
+/* Light mode pagination dots */
+[data-theme="light"] .pagination-dot {
+    background: #d0d0d0;
+}
+
+[data-theme="light"] .pagination-dot:hover {
+    background: #999;
+}
+
+[data-theme="light"] .pagination-dot.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
 }
 
 /* Process Section */

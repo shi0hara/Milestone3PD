@@ -360,6 +360,7 @@ window.addEventListener('scroll', () => {
 // ===== PROJECT CAROUSEL =====
 let currentIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
+const paginationDots = document.querySelectorAll('.pagination-dot');
 const totalItems = carouselItems.length;
 
 function updateCarousel() {
@@ -374,6 +375,15 @@ function updateCarousel() {
             item.classList.add('next');
         } else {
             item.classList.add('hidden');
+        }
+    });
+    
+    // Update pagination dots
+    paginationDots.forEach((dot, index) => {
+        if (index === currentIndex) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
         }
     });
 }
@@ -396,6 +406,14 @@ if (prevBtn && nextBtn) {
     prevBtn.addEventListener('click', prevProject);
     nextBtn.addEventListener('click', nextProject);
 }
+
+// Pagination dot controls
+paginationDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel();
+    });
+});
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
