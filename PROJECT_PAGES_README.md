@@ -18,8 +18,8 @@ Your portfolio now includes a complete project detail system with 9 template pro
 
 All projects can be accessed via: `http://localhost:8080/projects/{slug}`
 
-1. **Todo Application** - `/projects/todo-application`
-2. **Weather Dashboard** - `/projects/weather-dashboard`
+1. **Travel List Application** - `/projects/travel-list-application`
+2. **Sustainable E-Commerce (Figma Design)** - `/projects/sustainable-ecommerce`
 3. **Portfolio Website** - `/projects/portfolio-website`
 4. **E-Commerce Store** - `/projects/e-commerce-store`
 5. **Recipe Finder** - `/projects/recipe-finder`
