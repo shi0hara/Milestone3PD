@@ -883,9 +883,19 @@ ul {
 }
 
 .navbar .logo {
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar .logo img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
 }
 
 .theme-toggle {
