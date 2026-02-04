@@ -1143,7 +1143,6 @@ ul {
 /* Sections */
 .section {
     padding: var(--spacing-section) 0;
-    opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease-out;
     position: relative;
