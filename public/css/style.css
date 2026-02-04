@@ -2760,7 +2760,7 @@ ul {
 
 /* Limit mobile screenshot width for better presentation */
 .gallery-item img[src*="mobileca1"] {
-    max-width: 350px;
+    max-width: 220px;
     margin: 0 auto;
 }
 
