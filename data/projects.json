@@ -57,12 +57,16 @@
     "category": "Website",
     "short": "Personal portfolio showcasing projects and skills",
     "description": "A modern, responsive portfolio website built with Node.js and EJS templating. Features smooth animations, dark/light mode toggle, interactive cursor effects, and a project carousel. The site showcases my web development skills and provides an engaging user experience.",
-    "featured": "/images/projects/portfolio/hero.jpg",
+    "featured": "/images/pd_home.png",
     "images": [
-      "/images/projects/portfolio/hero.jpg",
-      "/images/projects/portfolio/screenshot1.jpg",
-      "/images/projects/portfolio/screenshot2.jpg",
-      "/images/projects/portfolio/screenshot3.jpg"
+      "/images/pd_1.png",
+      "/images/pd_2.png",
+      "/images/pd_3.png",
+      "/images/pd_4.png",
+      "/images/pd_5.png",
+      "/images/pd_6.png",
+      "/images/pd_7.png",
+      "/images/pd_8.png"
     ],
     "tech": ["Node.js", "Express", "EJS", "CSS3", "JavaScript"],
     "features": [
@@ -157,84 +161,31 @@
     "date": "2024-06"
   },
   {
-    "slug": "expense-tracker",
-    "title": "Expense Tracker",
-    "category": "Web App",
-    "short": "Track income and expenses with visual charts",
-    "description": "A personal finance tracker that helps users manage their income and expenses. Features include adding transactions, categorizing expenses, viewing balance summaries, and visualizing spending patterns with charts. Data is stored locally for privacy.",
-    "featured": "/images/projects/expense-tracker/hero.jpg",
+    "slug": "environmental-impact-tracker",
+    "title": "Environmental Impact Tracker Mobile App",
+    "category": "Mobile App",
+    "short": "Track your carbon footprint and environmental impact on the go",
+    "description": "A mobile application designed to help users monitor and reduce their environmental impact. Features include carbon footprint calculation, daily habit tracking, eco-friendly tips, and visual progress reports. Built as a collaborative team project with a focus on sustainability and user engagement.",
+    "featured": "/images/mobileca1_1.png",
     "images": [
-      "/images/projects/expense-tracker/hero.jpg",
-      "/images/projects/expense-tracker/screenshot1.jpg",
-      "/images/projects/expense-tracker/screenshot2.jpg",
-      "/images/projects/expense-tracker/screenshot3.jpg"
+      "/images/mobileca1_1.png",
+      "/images/mobileca1_2.png",
+      "/images/mobileca1_3.png",
+      "/images/mobileca1_4.png",
+      "/images/mobileca1_5.png"
     ],
-    "tech": ["JavaScript", "Chart.js", "HTML5", "CSS3", "LocalStorage"],
+    "tech": ["React Native", "JavaScript", "Mobile UI", "API Integration", "Team Project"],
     "features": [
-      "Add, edit, and delete income/expense transactions",
-      "Categorize transactions with custom categories",
-      "Visual charts showing spending patterns",
-      "Calculate and display current balance",
-      "Filter transactions by date range",
-      "Export data as CSV for backup"
+      "Track daily activities and their carbon footprint",
+      "Visual dashboards showing environmental impact over time",
+      "Personalized eco-friendly tips and challenges",
+      "Social features to share progress with friends",
+      "Category-based impact tracking (transport, food, energy)",
+      "Achievement system to encourage sustainable habits"
     ],
-    "challenges": "Integrating Chart.js library and creating meaningful visualizations from transaction data was a learning experience. I gained skills in data manipulation and chart customization.",
-    "repo": "https://github.com/yourusername/expense-tracker",
-    "live": "https://expense-tracker-demo.netlify.app",
+    "challenges": "Collaborating in a team environment and designing an intuitive mobile interface required strong communication and UX planning. I learned about mobile-first design patterns, cross-platform development, and implementing engaging gamification elements.",
+    "repo": "https://github.com/CupOCino/Team-4-card-app-starter",
+    "live": "",
     "date": "2024-07"
-  },
-  {
-    "slug": "movie-search",
-    "title": "Movie Search Engine",
-    "category": "Web App",
-    "short": "Search and explore movies using TMDb API",
-    "description": "A movie discovery platform that allows users to search for movies, view detailed information, watch trailers, and save favorites. Integrated with The Movie Database (TMDb) API to fetch movie data, ratings, cast information, and poster images.",
-    "featured": "/images/projects/movie-search/hero.jpg",
-    "images": [
-      "/images/projects/movie-search/hero.jpg",
-      "/images/projects/movie-search/screenshot1.jpg",
-      "/images/projects/movie-search/screenshot2.jpg",
-      "/images/projects/movie-search/screenshot3.jpg"
-    ],
-    "tech": ["JavaScript", "REST API", "HTML5", "CSS3", "Async/Await"],
-    "features": [
-      "Search movies by title with autocomplete",
-      "View detailed movie information and trailers",
-      "Browse popular, top-rated, and upcoming movies",
-      "Save favorite movies to local storage",
-      "Responsive grid layout with poster images",
-      "Filter by genre and release year"
-    ],
-    "challenges": "Handling large amounts of image data and implementing lazy loading for better performance was crucial. I learned about intersection observer API and image optimization techniques.",
-    "repo": "https://github.com/yourusername/movie-search",
-    "live": "https://movie-search-demo.netlify.app",
-    "date": "2024-08"
-  },
-  {
-    "slug": "note-taking-app",
-    "title": "Note Taking App",
-    "category": "Web App",
-    "short": "Simple and elegant note-taking application",
-    "description": "A minimalist note-taking application with markdown support, tags, and search functionality. Built with vanilla JavaScript and designed for quick note capture and organization. Features include auto-save, note categorization, and a clean, distraction-free interface.",
-    "featured": "/images/projects/notes-app/hero.jpg",
-    "images": [
-      "/images/projects/notes-app/hero.jpg",
-      "/images/projects/notes-app/screenshot1.jpg",
-      "/images/projects/notes-app/screenshot2.jpg",
-      "/images/projects/notes-app/screenshot3.jpg"
-    ],
-    "tech": ["JavaScript", "Markdown", "HTML5", "CSS3", "LocalStorage"],
-    "features": [
-      "Create, edit, and delete notes instantly",
-      "Markdown support for rich text formatting",
-      "Tag notes for better organization",
-      "Full-text search across all notes",
-      "Auto-save functionality prevents data loss",
-      "Dark mode for comfortable writing"
-    ],
-    "challenges": "Implementing markdown parsing and rendering required understanding of regex and string manipulation. I also learned about contenteditable attributes and handling user input securely.",
-    "repo": "https://github.com/yourusername/notes-app",
-    "live": "https://notes-app-demo.netlify.app",
-    "date": "2024-09"
   }
 ]
