@@ -2593,6 +2593,12 @@ ul {
     display: block;
 }
 
+/* Limit mobile screenshot width in hero */
+.project-hero-image img[src*="mobileca1"] {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 [data-theme="light"] .project-hero-image {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
     border-color: rgba(139, 92, 246, 0.2);
@@ -2760,7 +2766,7 @@ ul {
 
 /* Limit mobile screenshot width for better presentation */
 .gallery-item img[src*="mobileca1"] {
-    max-width: 220px;
+    max-width: 280px;
     margin: 0 auto;
 }
 
