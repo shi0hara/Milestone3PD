@@ -2774,6 +2774,120 @@ ul {
     transform: scale(1.05);
 }
 
+/* Project Video Section */
+.project-video {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.02);
+}
+
+[data-theme="light"] .project-video {
+    background: rgba(139, 92, 246, 0.02);
+}
+
+.project-video h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 15px 40px rgba(13, 255, 171, 0.1);
+    transition: all 0.3s ease;
+}
+
+.video-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(13, 255, 171, 0.2);
+    border-color: var(--primary-color);
+}
+
+[data-theme="light"] .video-wrapper {
+    border-color: rgba(139, 92, 246, 0.2);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.1);
+}
+
+[data-theme="light"] .video-wrapper:hover {
+    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
+    border-color: #8b5cf6;
+}
+
+.video-wrapper iframe {
+    display: block;
+    background: #000;
+}
+
+.video-link-container {
+    padding: 60px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(13, 255, 171, 0.05) 0%, rgba(0, 180, 216, 0.05) 100%);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-theme="light"] .video-link-container {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(167, 139, 250, 0.05) 100%);
+}
+
+.video-channel-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.video-channel-link:hover {
+    transform: translateY(-8px);
+}
+
+.video-channel-link svg {
+    color: #FF0000;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 12px rgba(255, 0, 0, 0.3));
+}
+
+.video-channel-link:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 8px 20px rgba(255, 0, 0, 0.5));
+}
+
+.video-channel-link h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="light"] .video-channel-link h3 {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.video-channel-link p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
 /* CTA Section */
 .project-cta {
     padding: 80px 0;

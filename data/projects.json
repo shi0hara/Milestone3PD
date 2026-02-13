@@ -22,7 +22,7 @@
     ],
     "challenges": "The main challenge was implementing efficient localStorage management and ensuring data persistence across browser sessions. I learned about proper data serialization and handling edge cases.",
     "repo": "https://github.com/shi0hara/C219-Travel-List-App",
-    "live": "https://shi0hara.github.io/C219-Travel-List-App/",
+    "live": "https://c219-travel-list-app-qgs8.vercel.app",
     "date": "2025"
   },
   {
@@ -186,6 +186,7 @@
     "challenges": "Collaborating in a team environment and designing an intuitive mobile interface required strong communication and UX planning. I learned about mobile-first design patterns, cross-platform development, and implementing engaging gamification elements.",
     "repo": "https://github.com/CupOCino/Team-4-card-app-starter",
     "live": "",
+    "video": "https://www.youtube.com/watch?v=2K8x95Z8RBk",
     "date": "2024-07"
   }
 ]
